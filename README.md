@@ -12,7 +12,9 @@ This is a frontend for a project I've wanted to do for a while: a browser-based 
  - Backend on Remainders was done in Go. This got me interested on the language, and this seems like a good opportunity to learn more about it.
  - in case Go doesn't work well on AI, I can always switch to Python, another language I've been meaning to learn.
 
-I intend to proceed on a relaxed paceon this project, maybe couple hours daily
+## Structure
+
+
 
 ## Dev diary
 
@@ -20,5 +22,13 @@ I intend to proceed on a relaxed paceon this project, maybe couple hours daily
 
 - initialised the project
 - initial board layout, couple pieces placed. image origin for pieces: https://www.kindpng.com/imgv/hxbhmb_chess-pieces-png-chess-pieces-sprite-sheet-transparent/
-- TODO: finish cutting images, proper ids for tiles. Also find out how to move a piece to another tile by dragging
+
+### 8.4.2022
+
+- cut rest of the images
+
+### 3.5.2022
+
+- basic objects for pieces with images, point values and boolean fo whether they are alive or not. separate arrays for storing white and black pieces.
+- pieces are placed on board from arrays
 
