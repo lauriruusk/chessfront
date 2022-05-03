@@ -31,4 +31,4 @@ This is a frontend for a project I've wanted to do for a while: a browser-based 
 
 - basic objects for pieces with images, point values and boolean fo whether they are alive or not. separate arrays for storing white and black pieces.
 - pieces are placed on board from arrays
-
+- board and pieces on their own components
