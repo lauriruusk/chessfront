@@ -2,4 +2,4 @@
 - pieces as objects with a points value *DONE*
 - program tracks location of pieces
 - before moving program checks if rules allow moving a piece to a location
-- separate components for board, pieces etc
+- separate components for board, pieces etc *DONE*
