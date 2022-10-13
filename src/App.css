@@ -24,3 +24,13 @@ img {
   height: 50px;
   width: 50px;
 }
+
+.item {
+  image-rendering: auto;
+  height: 50px;
+  width: 50px;
+}
+
+.hide {
+  display: none;
+}
