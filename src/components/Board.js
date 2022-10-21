@@ -1,35 +1,50 @@
 import React from "react";
 import Square from "./Square";
 import { blackPieces, whitePieces } from "./pieces"
-import Tower from "./Tower";
-const Board = ({ towerPosition }) => {
-    // const towerPosition = [0, 0]
-    const renderSquare = (i, [towerX, towerY]) => {
+import Knight from "./Knight";
+import { canMoveKnight, moveKnight } from "./Game";
+
+// Pelilaudan rakennus
+const Board = ({ knightPosition }) => {
+    // renders a square. checks 
+    const renderSquare = (i, [knightPosition]) => {
         const x = i % 8;
         const y = Math.floor(i / 8);
-        const isTowerHere = x === towerX && y === towerY;
+        const temp = [x, y]
+        const isKnightHere = temp === knightPosition;
         const black = (x + y) % 2 === 1;
-        
-        const piece = isTowerHere ? <Tower /> : null;
-        // console.log(x, y)
+        console.log(isKnightHere)
+        const piece = isKnightHere ? <Knight /> : null;
+
+
         return (
-            <div key={i} style= {{width: '12.5%', height: '12.5%' }}>
+        <div onClick={() => handleSquareClick(x, y)}>
+            <div key={i} style= {{width: '50px', height: '50px' }}>
                 <Square black={black}>
                     {piece}
                 </Square>
             </div>  
+        </div>
         )
     }
+
+    const handleSquareClick = (toX, toY) => {
+        if(canMoveKnight(toX, toY)) {
+            moveKnight(toX, toY);
+        }
+    }
+
+    // initializes and compiles an array for squares in board
     const squares = [];
     for (let i = 0; i < 64; i++) {
-        squares.push(renderSquare(i, towerPosition))
-        
+        squares.push(renderSquare(i, knightPosition))  
     }
+
     return (
         <div
             style={{
-                width: '100%',
-                height: '100%',
+                width: '400px',
+                height: '400px',
                 display: 'flex',
                 flexWrap: 'wrap'
             }}

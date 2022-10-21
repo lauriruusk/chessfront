@@ -36,4 +36,8 @@ This is a frontend for a project I've wanted to do for a while: a browser-based 
 ### 13.10.2022
 
 - finally got back to the project after summer. refactoring board, attempting to use ReactDnD for dragging pieces
-- 
+
+### 21.10.2022
+
+- moved forward in learning drag & drop, still more to go
+- piece is moving, but not rendering

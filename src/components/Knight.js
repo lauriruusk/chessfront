@@ -1,13 +1,13 @@
 import React from "react";
 import { blackPieces, whitePieces } from "./pieces";
 
-const Tower = () => {
+const Knight = () => {
     return (
         <div>
-            <img src={blackPieces[0].image} alt="black tower" />
+            <img src={blackPieces[1].image} alt="black horse" />
         </div>
         
     )
 }
 
-export default Tower;
+export default Knight;

@@ -3,4 +3,5 @@
 - program tracks location of pieces
 - before moving program checks if rules allow moving a piece to a location
 - separate components for board, pieces etc *DONE*
-- new board won't render background colors properly. find out why
+- new board won't render background colors properly. find out why *DONE*
+- after implementing piece moving, piece won't render. look for a fix
